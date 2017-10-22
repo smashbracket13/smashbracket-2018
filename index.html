@@ -2,6 +2,11 @@
 <html>
   <head>
     <title>Tournament Bracket Generator</title>
+
+    <!-- build:remove -->
+    <!-- Connect to server process -->
+    <script>require('electron-connect').client.create()</script>
+    <!-- end:build -->
     <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
     <script src="http://underscorejs.org/underscore-min.js"></script>
     <script>
@@ -107,7 +112,7 @@
         
         $('#add').on('click', function() {
           console.log("first showing");
-          showConsole("second showing");
+          showConsole("third showing");
         });
         
       });
